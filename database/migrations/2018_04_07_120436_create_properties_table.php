@@ -34,7 +34,7 @@ class CreatePropertiesTable extends Migration
 
             $table->boolean('published')->default(false);
             $table->boolean('featured')->default(false);
-            $table->decimal('price', 8, 2);
+            $table->decimal('price', 10, 2);
             $table->softDeletes();
             $table->timestamps();
         });
